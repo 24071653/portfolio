@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif ;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #010A1A;
+    color: #ededed;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 70px;
+}
+
+.navbar a:hover,a.active{
+    color: #00abf0;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.homecontent{
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.homecontent h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.homecontent h3{
+    font-size: 32px;
+    color: #00abf0;
+}
+.homecontent p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.btn{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    position: relative;
+}
+.btn a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #081b29;
+    transition: 0.5s;
+}
+
+.btn a:hover{
+    background-color: transparent;
+    color: white;
+}
+.socials{
+    position: fixed;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    transition: 0.5s;
+}
+
+.socials a:hover{
+    border-color: #010A1A;
+    background-color: #00abf0;
+    color: #081b29
+}
+.logoani{
+    position: fixed;
+    left: 0;
+    height: 40px;
+    width: 210px;
+    background-color: #010A1A;
+    animation: showrightlogo 1s ease 0.4s forwards;
+    margin-left: 190px;
+}
+
+.firstline{
+    height: 100px;
+    width: 510px;
+    background-color: #010A1A;
+    padding-left: 10px;
+    margin-left: 190px;
+    position: fixed;
+    left: 0;
+    animation: showrightline1 1s ease 1s forwards;
+}
+
+.secondline{
+    height: 50px;
+    width: 400px;
+    position: fixed;
+    background-color: #010A1A;
+    left: 0;
+    animation: showrightline2 1s ease 1.7s forwards;
+    margin-left: 190px;
+}
+
+.para{
+    height: 160px;
+    width: 600px;
+    position: fixed;
+    background-color: #010A1A;
+    margin-left: 190px;
+    left: 0;
+    animation: showrightpara 1s ease 2.3s forwards;
+}
+
+.buttons{
+    width: 400px;
+    height: 70px;
+    background-color: #010A1A;
+    position: absolute;
+    left: 0;
+    animation: showrightbtn 1s ease 2.8s forwards ;
+    z-index: 10;
+    box-shadow: 0 0 10px #010A1A;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.pfp{
+    right: 0;
+    height: 100vh;
+}
+
+.navphone{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+.checkboxx,#bars{
+    display: none;
+}
+.barspace{
+    display: flex;
+    justify-content: end;
+    
+}
+.dropdown{
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    height: 100vh;
+    width: 30vh;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.dropdown ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown ul li{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#bars{
+    font-size: 30px;
+}
+
+@media (max-width: 992px){
+    .logoani,.firstline,.secondline,.para,.buttons{
+        display: none;
+    }
+}
+
+@media(max-width:1200px) {
+    .main{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .pfp{
+        width: 100vh;
+        height: auto;
+    }
+    .navdesk{
+        display: none;
+    }
+
+    #bars{
+        display: inline-block;
+    }
+    .navphone{
+        display: flex;
+        flex-direction: column;
+    }
+    .barspace{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown{
+        display: none;
+    }
+    #check:checked~.dropdown{
+        display: block;
+    }
+}
+@media(max-width:650px) {
+    .main{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .pfp{
+        margin-top: 100px;
+        margin-right: 50px;
+        width: 600px;
+        height: auto;
+    }
+}
+
+@keyframes showrightlogo{
+    to{
+        width: 0;
+        left: 210px;
+    }
+}
+
+@keyframes showrightline1{
+    to{
+        width: 0;
+        left: 510px;
+        background-color: transparent;
+    }
+}
+
+@keyframes showrightline2{
+    to{
+        width: 0;
+        left: 400px;
+    }
+}
+@keyframes showrightpara{
+    to{
+        width: 0;
+        left: 600px;
+    }
+}
+
+@keyframes showrightbtn{
+    to{
+        width: 0;
+        left: 400px;
+    }
+}
