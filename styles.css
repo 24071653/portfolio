@@ -203,7 +203,7 @@ header{
 .dropdown{
     border: 2px solid rgb(255, 255, 255, 0.2);
     height: 100vh;
-    width: 30vw;
+    width: 50vw;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 .dropdown ul{
@@ -213,11 +213,18 @@ header{
 }
 
 .dropdown ul li{
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 #bars{
     font-size: 30px;
+}
+#xmark{
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    display: block;
+    z-index: 10;
 }
 
 @media (max-width: 992px){
@@ -277,7 +284,6 @@ header{
     .main p{
         font-size: 15px;
     }
-    @media(max-width:650px){
 
     .home{
         padding: 0 20px;
@@ -286,7 +292,6 @@ header{
     .homecontent{
         max-width: 100%;
     }
-    @media(max-width:650px){
 
     .home{
         padding: 0 20px;
@@ -300,8 +305,30 @@ header{
         width: 100%;
         max-width: 350px;
     }
-}
-}
+
+    .dropdown ul li a{
+        padding: 0;
+        margin: 30px;
+    }
+    .dropdown{
+        background-color: rgba(0, 171, 240,0.4);
+        box-shadow: none;
+    }
+    #xmark{
+        display: none;
+    }
+    #check:checked~#bars{
+        display: none;
+    }
+    #check:checked~#xmark{
+        display: block ;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 99999 ;
+        font-size: 20px;
+    }
+
 }
 @keyframes showrightlogo{
     to{
