@@ -203,7 +203,7 @@ header{
 .dropdown{
     border: 2px solid rgb(255, 255, 255, 0.2);
     height: 100vh;
-    width: 30vh;
+    width: 30vw;
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 .dropdown ul{
@@ -232,7 +232,7 @@ header{
         flex-direction: column-reverse;
     }
     .pfp{
-        width: 100vh;
+        width: 100%;
         height: auto;
     }
     .navdesk{
@@ -264,12 +264,45 @@ header{
     }
     .pfp{
         margin-top: 100px;
-        margin-right: 50px;
-        width: 600px;
+        width: 100%;
         height: auto;
     }
-}
+    .main h1{
+        font-size: 42px;
+        padding: 0px;
+    }
+    .main h3{
+        font-size: 26px;
+    }
+    .main p{
+        font-size: 15px;
+    }
+    @media(max-width:650px){
 
+    .home{
+        padding: 0 20px;
+    }
+
+    .homecontent{
+        max-width: 100%;
+    }
+    @media(max-width:650px){
+
+    .home{
+        padding: 0 20px;
+    }
+
+    .homecontent{
+        max-width: 100%;
+    }
+
+    .btn{
+        width: 100%;
+        max-width: 350px;
+    }
+}
+}
+}
 @keyframes showrightlogo{
     to{
         width: 0;
