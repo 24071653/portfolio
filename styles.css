@@ -102,33 +102,6 @@ header{
     background-color: transparent;
     color: white;
 }
-.socials{
-    position: fixed;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.socials a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #00abf0;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #00abf0;
-    transition: 0.5s;
-}
-
-.socials a:hover{
-    border-color: #010A1A;
-    background-color: #00abf0;
-    color: #081b29
-}
 .logoani{
     position: fixed;
     left: 0;
@@ -277,11 +250,84 @@ header{
     color: #00abf0;
 }
 .contactinfo div:hover a{
-    font-size: 65px;
     color: #00abf0;
 }
-.contactinfo div p{
+.contactinfo div p a{
     font-size: 30px;
+    text-decoration: none;
+
+}
+
+/* for about page */
+.aboutbox{
+    margin-top: 100px;
+    margin-left: 9vw;
+    margin-right: 9vw;
+}
+.aboutbox h3{
+    color: #00abf0;
+    font-size: 35px;
+    margin-bottom: 11px;
+}
+.aboutbox p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.hello{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* for project page */
+.projectbox{
+    width: 80vw;
+    height: 100%;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.projectbox .project1,.project2,.project3,.project4{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.projectbox div .image{
+    height: 300px;
+    width: 500px;
+}
+.projectbox div .description{
+    height: 100%;
+    width: 1030px;
+}
+.project1 .image img{
+    width:100%;
+    height:auto;
+    display: block;
+    border: 3px solid #00abf0;
+    box-shadow: 0px 0px 6px #00abf0;
+}
+.projectbox > div{
+    display: flex;
+}
+.description p{
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.projectheading{
+    margin-left: 10vw;
+    margin-top: 12vh;
+    font-size: 35px;
+    color: #00abf0;
+}
+
+.description h4{
+    font-size: 30px;
+    padding-left: 2.5vw;
+}
+.description p{
+    font-size: 20px;
 }
 
 @media (max-width: 992px){
@@ -414,10 +460,31 @@ header{
         margin-left:20px;
         margin-right: 20px;
     }
-    .contactinfo div p{
+    .contactinfo div p a{
         font-size: 20px;
     }
 
+    /* for project page */
+    .projectbox > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .projectbox div .image{
+    height: 20vh;
+    width: 80vw;
+    }
+    .projectbox div .description{
+    height: 100%;
+    width: 80vw;
+    }
+    .description p{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .description h4{
+        font-size: 25px;
+        margin-top: 15px;
+    }
 }
 @keyframes showrightlogo{
     to{
