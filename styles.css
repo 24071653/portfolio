@@ -510,6 +510,8 @@ footer{
         flex-direction: column;
         justify-content: start;
         align-items:start;
+        height: 100%;
+        top: 45vh;
     }
     .contactinfo div{
         flex-direction: row;
@@ -525,6 +527,10 @@ footer{
     .contactinfo div p a{
         font-size: 20px;
     }
+    .home{
+        height: 130vh;
+    }
+
 
     /* for project page */
     .projectbox > div{
@@ -574,6 +580,13 @@ footer{
         font-size: 18px;
         font-weight: 500;
         margin-top: 5px;
+    }
+
+    /* for footer */
+    footer{
+        font-size: 15px;
+        line-height: 30px;
+        word-spacing: 2px;
     }
 
 }
