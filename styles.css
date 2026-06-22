@@ -383,7 +383,14 @@ header{
     font-size:clamp(1vw, 10vw, 100px)
 }
 
-
+footer{
+    text-align: center;
+    line-height: 40px;
+    word-spacing: 7px;
+    background-color: #010A1A;
+    font-size: 20px;
+    border-top: 2px solid #00abf0;
+}
 
 @media (max-width: 992px){
     .logoani,.firstline,.secondline,.para,.buttons{
